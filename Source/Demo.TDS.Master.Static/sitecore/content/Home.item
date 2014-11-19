@@ -1,0 +1,514 @@
+----item----
+version: 1
+id: {110D559F-DEA5-42EA-9C1C-8A5DF7E70EF9}
+database: master
+path: /sitecore/content/Home
+parent: {0DE95AE4-41AB-4D01-9EB0-67441B7C2450}
+name: Home
+master: {00000000-0000-0000-0000-000000000000}
+template: {44D657D3-6758-4C9C-B4C5-9200B424F186}
+templatekey: HomePage
+
+----field----
+field: {1A794E52-7BAC-4EC5-B957-EB46D497870C}
+name: Tags
+key: tags
+content-length: 155
+
+{AB1B5DC2-B122-48AE-9D42-C3B924FCB8EF}|{0C414818-0EE0-4826-B398-9112876DE7CD}|{8B6A87C6-7A26-4E9F-8920-E9EF7226CE81}|{CEB2DA3C-AFA0-4F69-A20F-8EF788D3E678}
+----field----
+field: {B0A67B2A-8B07-4E0B-8809-69F751709806}
+name: __Tracking
+key: __tracking
+content-length: 0
+
+
+----field----
+field: {A0CB3965-8884-4C7A-8815-B6B2E5CED162}
+name: __Editors
+key: __editors
+content-length: 0
+
+
+----field----
+field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
+name: __Icon
+key: __icon
+content-length: 22
+
+Network/16x16/home.png
+----field----
+field: {9C6106EA-7A5A-48E2-8CAD-F0F693B1E2D4}
+name: __Read Only
+key: __read only
+content-length: 0
+
+
+----field----
+field: {0C894AAB-962B-4A84-B923-CB24B05E60D2}
+name: __Ribbon
+key: __ribbon
+content-length: 0
+
+
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 2
+
+-1
+----field----
+field: {A791F095-2521-4B4D-BEF9-21DDA221F608}
+name: __Style
+key: __style
+content-length: 0
+
+
+----field----
+field: {6FD695E7-7F6D-4CA5-8B49-A829E5950AE9}
+name: __Subitems Sorting
+key: __subitems sorting
+content-length: 0
+
+
+----field----
+field: {83798D75-DF25-4C28-9327-E8BAC2B75292}
+name: __Insert Rules
+key: __insert rules
+content-length: 0
+
+
+----field----
+field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
+name: __Renderings
+key: __renderings
+content-length: 1991
+
+<r xmlns:p="p" xmlns:s="s" p:p="1"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"><r uid="{BECA03A7-9867-4750-A069-242BE9AF9FC4}"><p:d /></r><r uid="{33BA509D-9705-4932-B913-66A6AF39AA8B}"><p:d /></r><r uid="{FBBEB215-4896-45E6-AE37-BD2564C92340}" p:before="r[@uid='{40BD12A7-6656-4F3C-91BE-0EF911C56ECB}']" s:id="{8AE7C7A6-B617-4B8E-AAD2-08EBCAC4E58F}" s:ph="/body/content" /><r uid="{40BD12A7-6656-4F3C-91BE-0EF911C56ECB}" p:before="r[@uid='{1569426F-4FA4-458A-816C-B42E89182038}']" s:id="{AD93A170-E986-4FED-9C1D-B43B296574C2}" s:ph="/body/sideContent" /><r uid="{1569426F-4FA4-458A-816C-B42E89182038}" p:before="r[@uid='{E8CC415B-623B-46AD-9253-3438D9781C77}']" s:ds="" s:id="{74C0F1CA-AE91-4C91-A525-B5208AFBA4C8}" s:par="Tags=%7B0A8A5F92-345E-4FEF-9EC1-7FC5B9B8BB21%7D&amp;Group Tags By&amp;Items Per Page&amp;Heading&amp;Selection Method=%7B5F9D4C66-049F-471D-947A-31F5F862CE10%7D&amp;Aggregate By&amp;Order By=%7B9FA2B904-BE90-46EE-975C-3CF56F7DA150%7D&amp;Order Direction=%7B71B3D270-9ED5-473A-B7E9-230E501DD375%7D" s:ph="/body/sideContent" /><r uid="{E8CC415B-623B-46AD-9253-3438D9781C77}" p:before="r[@uid='{EB194C32-0ADA-433C-BE7C-18AA4FF4CDDC}']" s:id="{06908D2B-6E24-4BDA-BF41-50EAD4F86FBE}" s:ph="/body/content" /><r uid="{EB194C32-0ADA-433C-BE7C-18AA4FF4CDDC}" p:before="r[@uid='{C3EF92AE-72CD-40C4-A7CF-D2C23C1C2201}']" s:ds="{6244DB29-7CB8-4A8E-ACF4-9660F2E455B7}" s:id="{AD93A170-E986-4FED-9C1D-B43B296574C2}" s:ph="/body/content" /><r uid="{C3EF92AE-72CD-40C4-A7CF-D2C23C1C2201}" p:before="r[@uid='{B1E92A61-DFC8-49E5-8E72-39D4BC9742E0}']" s:id="{B32212C8-81A6-4BCF-B059-99D592C287ED}" s:ph="body" /><r uid="{B1E92A61-DFC8-49E5-8E72-39D4BC9742E0}" s:ds="" s:par="Tags=%7B17B1A761-F725-4DE9-B514-512A54B4AE28%7D&amp;Group Tags By&amp;Items Per Page&amp;Heading&amp;Selection Method=%7B5F9D4C66-049F-471D-947A-31F5F862CE10%7D&amp;Aggregate By&amp;Order By=%7B9FA2B904-BE90-46EE-975C-3CF56F7DA150%7D&amp;Order Direction=%7B71B3D270-9ED5-473A-B7E9-230E501DD375%7D" /></d></r>
+----field----
+field: {86FE4F77-4D9A-4EC3-9ED9-263D03BD1965}
+name: __Publish
+key: __publish
+content-length: 0
+
+
+----field----
+field: {74484BDF-7C86-463C-B49F-7B73B9AFC965}
+name: __Publishing groups
+key: __publishing groups
+content-length: 0
+
+
+----field----
+field: {9135200A-5626-4DD8-AB9D-D665B8C11748}
+name: __Never publish
+key: __never publish
+content-length: 0
+
+
+----field----
+field: {DEC8D2D5-E3CF-48B6-A653-8E69E2716641}
+name: __Security
+key: __security
+content-length: 0
+
+
+----field----
+field: {56C15C6D-FD5A-40CA-BB37-64CEEC6A9BD5}
+name: __Archive date
+key: __archive date
+content-length: 0
+
+
+----field----
+field: {C2F5B2B5-71C1-431E-BF7F-DBDC1E5A2F83}
+name: __Quick Action Bar Validation Rules
+key: __quick action bar validation rules
+content-length: 0
+
+
+----field----
+field: {B7E5B151-B145-4CED-85C5-FBDB566DFA4D}
+name: __Validator Bar Validation Rules
+key: __validator bar validation rules
+content-length: 0
+
+
+----field----
+field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
+name: __Workflow
+key: __workflow
+content-length: 38
+
+{A5BC37E7-ED96-4C1E-8590-A26E64DB55EA}
+----field----
+field: {CA9B9F52-4FB0-4F87-A79F-24DEA62CDA65}
+name: __Default workflow
+key: __default workflow
+content-length: 0
+
+
+----version----
+language: da
+version: 1
+revision: 89124fec-60d2-45fd-9ea9-293a2c1315c7
+
+----field----
+field: {31532885-F743-4EB6-BB50-291B75C12A66}
+name: Title
+key: title
+content-length: 8
+
+Sitecore
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 4
+
+Hjem
+----field----
+field: {577F1689-7DE4-4AD2-A15F-7FDC1759285F}
+name: __Long description
+key: __long description
+content-length: 62
+
+Elementet Hjem er som standard startpunktet for en hjemmeside.
+----field----
+field: {9541E67D-CE8C-4225-803D-33F7F29F09EF}
+name: __Short description
+key: __short description
+content-length: 23
+
+Velkommen til Sitecore.
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20140526T180353:635367242334471840
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+89124fec-60d2-45fd-9ea9-293a2c1315c7
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140526T180354:635367242342909178
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: de-DE
+version: 1
+revision: 33831503-53dc-4ad9-8dd3-a3340de8c7de
+
+----field----
+field: {31532885-F743-4EB6-BB50-291B75C12A66}
+name: Title
+key: title
+content-length: 8
+
+Sitecore
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 4
+
+Home
+----field----
+field: {577F1689-7DE4-4AD2-A15F-7FDC1759285F}
+name: __Long description
+key: __long description
+content-length: 59
+
+Das Home Item ist der vorgegebene Startpunkt einer Website.
+----field----
+field: {9541E67D-CE8C-4225-803D-33F7F29F09EF}
+name: __Short description
+key: __short description
+content-length: 24
+
+Willkommen bei Sitecore.
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20140526T181503:635367249030045459
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+33831503-53dc-4ad9-8dd3-a3340de8c7de
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140526T181503:635367249031920459
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: en
+version: 1
+revision: f324394f-5c7a-43ff-af3e-fd8b8f1e4a69
+
+----field----
+field: {31532885-F743-4EB6-BB50-291B75C12A66}
+name: Title
+key: title
+content-length: 11
+
+Fortis Demo
+----field----
+field: {C46BD2A4-1FA0-4214-B5B0-22C518AEABB0}
+name: Sub Title
+key: sub title
+content-length: 31
+
+Start wrapping those items now!
+----field----
+field: {4742E404-C88A-46F6-9573-358D016E7DA1}
+name: Image
+key: image
+content-length: 65
+
+<image mediaid="{3C45B6EC-425B-4D1A-BF7F-5505B36F0B42}" ></image>
+----field----
+field: {03156C19-7B48-48A0-8F47-0A67272F1251}
+name: Body
+key: body
+content-length: 1115
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.<br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br></p>
+----field----
+field: {4155027F-A908-4697-913F-7AC739ADBE7F}
+name: Date And Time
+key: date and time
+content-length: 15
+
+20140707T084100
+----field----
+field: {77B1ACDD-3425-414F-A5EA-AE8AAC88B2BF}
+name: Page Title
+key: page title
+content-length: 17
+
+Rocketcore | Home
+----field----
+field: {9DAE91CE-65BD-4B0C-8386-169C399FAD4C}
+name: Keywords
+key: keywords
+content-length: 39
+
+Goblins, Rockets, Engineering, Sitecore
+----field----
+field: {B4218944-BD16-4AF5-9DA2-68E6290346D9}
+name: Description
+key: description
+content-length: 66
+
+The best site on the planet for rockets, goblins and enginerering!
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 0
+
+
+----field----
+field: {577F1689-7DE4-4AD2-A15F-7FDC1759285F}
+name: __Long description
+key: __long description
+content-length: 58
+
+The Home item is the default starting point for a website.
+----field----
+field: {9541E67D-CE8C-4225-803D-33F7F29F09EF}
+name: __Short description
+key: __short description
+content-length: 20
+
+Welcome to Sitecore.
+----field----
+field: {C8F93AFE-BFD4-4E8F-9C61-152559854661}
+name: __Valid from
+key: __valid from
+content-length: 0
+
+
+----field----
+field: {4C346442-E859-4EFD-89B2-44AEDF467D21}
+name: __Valid to
+key: __valid to
+content-length: 0
+
+
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20080407T135900
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+f324394f-5c7a-43ff-af3e-fd8b8f1e4a69
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20141119T225529:635520345298494632
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: ja-JP
+version: 1
+revision: e5f9a008-f436-4487-9331-e32292d16b0b
+
+----field----
+field: {31532885-F743-4EB6-BB50-291B75C12A66}
+name: Title
+key: title
+content-length: 23
+
+サイトコア Web プラットフォームへようこそ
+----field----
+field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
+name: __Display name
+key: __display name
+content-length: 3
+
+ホーム
+----field----
+field: {577F1689-7DE4-4AD2-A15F-7FDC1759285F}
+name: __Long description
+key: __long description
+content-length: 30
+
+ホーム アイテムは Web サイトのデフォルトの開始場所です
+----field----
+field: {9541E67D-CE8C-4225-803D-33F7F29F09EF}
+name: __Short description
+key: __short description
+content-length: 23
+
+サイトコア Web プラットフォームへようこそ
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 34
+
+20140526T182623:635367255834682801
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+e5f9a008-f436-4487-9331-e32292d16b0b
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20140526T182624:635367255843589171
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

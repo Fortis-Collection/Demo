@@ -1,0 +1,11 @@
+﻿@model ICallToActionListModel
+<div class="flexslider">
+	<div class="slides">
+	@foreach (var callToAction in Model.CallToActions)
+	{
+		<div class="item">
+			@Html.Sitecore().Field("Image", callToAction, new { width = 960, height = 330, crop = 1 })
+		</div>
+	}
+	</div>
+</div>

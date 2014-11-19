@@ -1,0 +1,25 @@
+﻿@model ICallToActionListModel
+<div>
+	@if (Model.Header != null)
+	{
+	<h3>@Html.Sitecore().Field("Text", Model.Header)</h3>
+	}
+	@foreach (var callToAction in Model.CallToActions)
+	{
+		<div class="callToAction">
+			@Html.Sitecore().Field("Image", callToAction, new { @class = "dynamic", crop = 1 })
+			<div class="inner">
+				<h3 class="title">@Html.Sitecore().Field("Title", callToAction)</h3>
+				<div class="body">
+					@Html.Sitecore().Field("Body", callToAction)
+				</div>
+				<div class="datetime">
+					@Html.Sitecore().Field("Date And Time", callToAction)
+				</div>
+			</div>
+			<div class="link">
+				@Html.Sitecore().Field("Link", callToAction)
+			</div>
+		</div>
+	}
+</div>
