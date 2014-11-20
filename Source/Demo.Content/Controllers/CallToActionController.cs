@@ -15,16 +15,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Web.Mvc;
+using Fortis.Search;
+using Fortis.Model;
+using Demo.Model.Templates.UserDefined;
 
 namespace Demo.Content.Controllers
 {
 	public class CallToActionController : Controller
 	{
 		protected readonly ISearchManager SearchManager;
+		protected readonly IItemSearchFactory ItemSearchFactory;
+		protected readonly IItemFactory ItemFactory;
 
-		public CallToActionController(ISearchManager searchManager)
+		public CallToActionController(ISearchManager searchManager, IItemSearchFactory itemSearchFactory, IItemFactory itemFactory)
 		{
 			SearchManager = searchManager;
+			ItemSearchFactory = itemSearchFactory;
+			ItemFactory = itemFactory;
 		}
 
 		public ViewResult CallToActionHeroSlider()
@@ -43,24 +50,22 @@ namespace Demo.Content.Controllers
 
 		public CallToActionListModel CreateModel()
 		{
-			var renderingParameters = RenderingContext.Current.Rendering.Parameters;
-			var tags = renderingParameters["tags"].Split('|').Select(id => new ID(id));
-			var headerItemId = renderingParameters["Heading"];
-			var searchResults = Enumerable.Empty<SearchResultItem>();
+			var renderingContext = ItemFactory.GetRenderingContextItems<IItemWrapper, IItemWrapper, ICallToActionListOptions>();
+			var tags = renderingContext.RenderingParametersItem.Tags.Value;
+			var phrase = renderingContext.RenderingParametersItem.Heading.GetTarget<ITextPhrase>();
+			var searchResults = Enumerable.Empty<ICallToAction>();
 
 			using (var searchContext = SearchManager.SearchContext)
 			{
-				var searchQueryable = searchContext.GetQueryable<SearchResultItem>();
+				var searchQueryable = ItemSearchFactory.FilteredSearch<ICallToAction>(searchContext.GetQueryable<ICallToAction>());
 
-				searchResults = searchQueryable.Where(item => item.TemplateId == new ID("{30683BF7-4B2E-443F-9C4C-1DAABB2962C2}"))
-											   .FilterByTags(tags)
-											   .ToList();
+				searchResults = searchQueryable.ContainsOr(item => item.TagsValue, tags).ToList();
 			}
 
 			var model = new CallToActionListModel
 			{
-				CallToActions = searchResults.Select(item => item.GetItem()),
-				Header = string.IsNullOrWhiteSpace(headerItemId) ? (Item)null : Sitecore.Context.Database.GetItem(headerItemId)
+				CallToActions = searchResults,
+				Header = phrase
 			};
 
 			return model;

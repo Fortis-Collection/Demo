@@ -18,11 +18,11 @@
     <LegacyFileReplacement>false</LegacyFileReplacement>
     <Name>Demo.TDS.Master</Name>
     <RootNamespace>Rocketcore.TDS.Master</RootNamespace>
-    <EnableCodeGeneration>False</EnableCodeGeneration>
+    <EnableCodeGeneration>True</EnableCodeGeneration>
     <SitecoreDatabase>master</SitecoreDatabase>
     <AssemblyStatus>Exclude</AssemblyStatus>
     <FieldsForCodeGen>Title,Blob,Shared,Unversioned,Default value,Validation,ValidationText,__Long description,__Short description,__Display name,__Hidden,__Read Only,__Sortorder</FieldsForCodeGen>
-    <CodeGenTargetProject>Rocketcore.Model</CodeGenTargetProject>
+    <CodeGenTargetProject>Demo.Model</CodeGenTargetProject>
     <CodeGenFile>Model.cs</CodeGenFile>
     <HeaderTransformFile>fortisheader.tt</HeaderTransformFile>
     <BaseTransformFile>fortisitem.tt</BaseTransformFile>
@@ -886,6 +886,10 @@
   </ItemGroup>
   <ItemGroup>
     <ExcludedAssemblies Include="Sitecore.%2a.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <CodeGenTemplate Include="Code Generation Templates\fortisheader.tt" />
+    <CodeGenTemplate Include="Code Generation Templates\fortisitem.tt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets" />
 </Project>

@@ -1,2 +1,14 @@
-﻿<h1 class="heading">@Html.Sitecore().Field("Title")</h1>
-<p>@Html.Sitecore().Field("Sub Title")</p>
+﻿@using Fortis.Model
+@using Demo.Model.Templates.UserDefined;
+@model RenderingModel<IContentHeadings, IContentHeadings>
+@if (Model.RenderingItem != null)
+{
+	if (!String.IsNullOrEmpty(Model.RenderingItem.Title.RawValue))
+	{
+		<h1 class="heading">@Model.RenderingItem.Title</h1>
+	}
+	if (!String.IsNullOrEmpty(Model.RenderingItem.SubTitle.RawValue))
+	{
+		<p>@Model.RenderingItem.SubTitle</p>
+	}
+}

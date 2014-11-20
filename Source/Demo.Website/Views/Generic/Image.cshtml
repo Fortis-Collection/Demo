@@ -1,1 +1,7 @@
-﻿<div class="gutter genericContent">@Html.Sitecore().Field("Image")</div>
+﻿@using Fortis.Model
+@using Demo.Model.Templates.UserDefined;
+@model RenderingModel<IContentImage, IContentImage>
+@if (Model.RenderingItem != null)
+{
+	<div class="gutter genericContent">@Model.RenderingItem.Image</div>
+}

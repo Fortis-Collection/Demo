@@ -10,6 +10,10 @@ namespace Demo.Website.App_Start
     using SimpleInjector.Integration.Web;
     using SimpleInjector.Integration.Web.Mvc;
 	using Rocketcore.Search;
+	using Fortis.Model;
+	using Fortis.Providers;
+	using Fortis.Search;
+	using Fortis.Mvc.Providers;
     
     public static class SimpleInjectorInitializer
     {
@@ -31,6 +35,7 @@ namespace Demo.Website.App_Start
         private static void InitializeContainer(Container container)
         {
 			InitialiseSearch(container);
+			InitialiseFortis(container);
         }
 
 		private static void InitialiseSearch(Container container)
@@ -40,6 +45,23 @@ namespace Demo.Website.App_Start
 					new SearchIndex("sitecore_core_index"),
 					new SearchIndex("sitecore_web_index")
 				), Lifestyle.Singleton);
+		}
+
+		private static void InitialiseFortis(Container container)
+		{
+			// Register Fortis
+			container.Register<IItemFactory, ItemFactory>();
+			container.Register<IContextProvider, ContextProvider>();
+			container.Register<ISpawnProvider, SpawnProvider>();
+			container.Register<ITemplateMapProvider, TemplateMapProvider>();
+			container.Register<IModelAssemblyProvider, ModelAssemblyProvider>();
+			container.Register<IItemSearchFactory, ItemSearchFactory>();
+
+			// Initialise fortis for pipelines and events
+			Fortis.Global.Initialise(
+				container.GetInstance<ISpawnProvider>(),
+				container.GetInstance<IItemFactory>()
+			);
 		}
     }
 }

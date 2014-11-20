@@ -1,3 +1,6 @@
-﻿<div class="gutter">
-	@Html.Sitecore().Field("Body")
+﻿@using Fortis.Model
+@using Demo.Model.Templates.UserDefined;
+@model RenderingModel<IContentBody, IContentBody>
+<div class="gutter">
+	@Model.RenderingItem.Body
 </div>

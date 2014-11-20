@@ -38,6 +38,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Fortis">
+      <HintPath>..\packages\Fortis.3.5.0.1\lib\net45\Fortis.dll</HintPath>
+    </Reference>
+    <Reference Include="Fortis.Mvc">
+      <HintPath>..\packages\Fortis.Mvc-5.2.0.0.0\lib\net45\Fortis.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Fortis.Search.Lucene">
+      <HintPath>..\packages\Fortis.Search.Lucene.1.0.0.1\lib\net45\Fortis.Search.Lucene.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Rocketcore.Content.Tagging">
       <HintPath>..\..\_Libraries\Rocketcore.Content.Tagging.dll</HintPath>
@@ -149,6 +158,8 @@
     <Content Include="App_Config\Include\Demo\Demo.Search.Lucene.config" />
     <Content Include="Views\CallToAction\CallToActionHeroSlider.cshtml" />
     <Content Include="Views\CallToAction\CallToActionList.cshtml" />
+    <Content Include="App_Config\Include\Fortis\Fortis.Search.Lucene.config" />
+    <Content Include="App_Config\Include\Fortis\Fortis.Mvc.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -1,4 +1,5 @@
-﻿using Sitecore.Data.Items;
+﻿using Demo.Model.Templates.UserDefined;
+using Sitecore.Data.Items;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +10,7 @@ namespace Demo.Content.Models
 {
 	public class CallToActionListModel : ICallToActionListModel
 	{
-		public Item Header { get; set; }
-		public IEnumerable<Item> CallToActions { get; set; }
+		public ITextPhrase Header { get; set; }
+		public IEnumerable<ICallToAction> CallToActions { get; set; }
 	}
 }

@@ -232,7 +232,7 @@ namespace <#= FullNamespace(template) #>
 <# if (isRenderingParametersTemplate) { #>
 			get { return (Fortis.Model.RenderingParameters.Fields.<#= GetFieldWrapperType(field.Type) #>)GetField("<#= field.Name #>", "<#= field.Type.ToLower() #>"); }
 <# } else { #>
-			get { return GetField<<#= GetFieldWrapperType(field.Type) #>>("<#= field.Name #>"<# if (IsSupportedSearchFieldType(field.Type)) { #>, "<#= field.Name.Replace(" ", "_").ToLowerInvariant() + GetFieldTypeSearchAffix(field.Type) #>"<# } #>); }
+			get { return GetField<<#= GetFieldWrapperType(field.Type) #>>("<#= field.Name #>"<# if (IsSupportedSearchFieldType(field.Type)) { #>, "<#= field.Name.Replace(" ", "_").ToLowerInvariant() #>"<# } #>); }
 <# } #>
 		}
 
@@ -263,7 +263,7 @@ public string GetBaseTemplateInterface(bool isRenderingParametersTemplate)
 
 public string GetBaseTemplateClass(bool isRenderingParametersTemplate)
 {
-	return isRenderingParametersTemplate ? "RenderingParameterWrapper" : "CustomItemWrapper";
+	return isRenderingParametersTemplate ? "RenderingParameterWrapper" : "ItemWrapper";
 }
 
 public string GetConstructorParameters(bool isRenderingParametersTemplate)
