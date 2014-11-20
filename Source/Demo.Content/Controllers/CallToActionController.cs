@@ -41,14 +41,11 @@ namespace Demo.Content.Controllers
 			return View(model);
 		}
 
-		public IEnumerable<ID> GetTags(RenderingParameters renderingParameters)
-		{
-			return renderingParameters["tags"].Split('|').Select(id => new ID(id));
-		}
-
 		public CallToActionListModel CreateModel()
 		{
-			var tags = GetTags(RenderingContext.Current.Rendering.Parameters);
+			var renderingParameters = RenderingContext.Current.Rendering.Parameters;
+			var tags = renderingParameters["tags"].Split('|').Select(id => new ID(id));
+			var headerItemId = renderingParameters["Heading"];
 			var searchResults = Enumerable.Empty<SearchResultItem>();
 
 			using (var searchContext = SearchManager.SearchContext)
@@ -62,7 +59,8 @@ namespace Demo.Content.Controllers
 
 			var model = new CallToActionListModel
 			{
-				CallToActions = searchResults.Select(item => item.GetItem())
+				CallToActions = searchResults.Select(item => item.GetItem()),
+				Header = string.IsNullOrWhiteSpace(headerItemId) ? (Item)null : Sitecore.Context.Database.GetItem(headerItemId)
 			};
 
 			return model;
